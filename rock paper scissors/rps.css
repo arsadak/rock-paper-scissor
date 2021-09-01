@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: rgb(201, 224, 217);
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scoreboard{
+    width: 700px;
+    border: 1px solid rgb(163, 182, 176);
+    border-radius: 10px;
+    margin-top: 50px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.title{
+    margin-left: 10px;
+}
+
+.score{
+ height: 100px;
+ width: 100px;
+ margin-right: 10px;
+ background-color: white;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.score p{
+    color: #2a45c2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.score h1{
+    color: #565458;
+    font-size: 40px;
+}
+
+.hands-container{
+    display: flex;
+    height: 500px;
+    width: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    background: url(assets/triangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+}
+
+.hands-container img{
+    height: 175px;
+    width: 140px;
+}
+
+.paper{
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+.scissor{
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.rock{
+    margin-bottom: 25px;
+}
+
+.hand{
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.hand:hover{
+    transform: scale(1.1);
+}
+
+.contest{
+    height: 500px;
+    width:600px;
+    display:none;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.contest img{
+    height: 178px;
+    width: 140px;
+}
+
+.contest >div{
+    flex: 1;
+}
+
+.contest h2{
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: rgb(29, 94, 94);
+}
+
+.handimagecont{
+    display: flex;
+    justify-content: center;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result h1{
+    font-size: 35px;
+    color: rgb(54, 57, 87);
+}
+
+.newgame{
+    font-size: 13px;
+    margin-top: 25px;
+    background-color:whitesmoke;
+    padding: 7px 10px;
+    border: 1px solid slategrey;
+    border-radius: 5px;
+    cursor: pointer;
+    color: hsl(229, 25%, 31%);
+    box-shadow: 0 0 7px rgb(96, 172, 190);
+    transition: all 0.20s;
+}
+
+.newgame:hover{
+    background-color: bisque;
+    transform: translate(0, -2px) ;
+}

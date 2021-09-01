@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="rps.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="scoreboard">
+            <div class="title">
+                <img src="assets/title.png" alt="">
+            </div>
+            <div class="score">
+                <p>score</p>
+                <h1>0</h1>
+            </div>
+
+        </div>
+        <div class="hands-container">
+            <div class="paper hand">
+                <img src="assets/Paper.png" alt="" onclick="userhand('paper')">
+            </div>
+            <div class="scissor hand">
+                <img src="assets/Scissors.png" alt="" onclick="userhand('scissor')">
+            </div>
+            <div class="rock hand">
+                <img src="assets/Rock.png" alt="" onclick="userhand('rock')">
+            </div>
+        </div>
+        <div class="contest">
+            <div class="userhand">
+                <h2>YOU PICKED</h2>
+                <div class="handimagecont">
+                    <img id="userpickhand" src="assets/Rock.png" alt="">
+                </div>
+            </div>
+            <div class="result">
+                <h1 class="decision">YOU </h1>
+                <div class="newgame" onclick="reset()">PLAY AGAIN</div>
+            </div>
+            <div class="comp-hand">
+                <h2>THE HOUSE PICKED</h2>
+                <div class="handimagecont">
+                    <img id="comppickhand"src="assets/Scissors.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="rps.js"></script>
+</body>
+</html>
